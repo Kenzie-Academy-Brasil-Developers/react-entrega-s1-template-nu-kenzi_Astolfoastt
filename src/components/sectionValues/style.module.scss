@@ -1,0 +1,28 @@
+.containerValue {
+    margin-top: 20px;
+    border: .0625rem solid var(--color-border-1);
+    border-radius: 4px;
+    height: 96px;
+    padding: 1rem;
+}
+
+.value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+     strong {
+        font-size: 1rem;
+    }
+
+    span {
+        font-size: 16px;
+        color: var(--color-primary);
+    }
+
+}
+
+.paragraph {
+   font-weight: var(--font--400);
+   font-size: 0.8rem;
+}
