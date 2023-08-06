@@ -40,7 +40,7 @@ const AllSections = () => {
       <main className="container">
         <section>
           <AllForms addValue={addValue} />
-          {totalSum != 0 && (
+          {valueList.length > 0 &&(
             <SumValues
               resultValue={totalSum.toLocaleString("pt-BR", {
                 style: "currency",
@@ -48,12 +48,12 @@ const AllSections = () => {
               })}
               paragraph="O valor se refere ao saldo"
               strong="Valor total:"
-            />
+              />
           )}
-        </section>
-        <section>
-          <SectionList valueList={valueList} removeValue={removeValue} />
-        </section>
+              </section>
+              <section>
+                <SectionList valueList={valueList} removeValue={removeValue} />
+              </section>
         <ToastContainer />
       </main>
     </>

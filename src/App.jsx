@@ -1,7 +1,7 @@
 import HomePage from "./homePage/HomePage"
 import "./styles/index.scss"
 
-function App() {
+const App = () => {
   return (
     <>
       <HomePage />

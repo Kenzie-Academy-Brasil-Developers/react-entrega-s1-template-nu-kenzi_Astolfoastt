@@ -4,7 +4,9 @@ import style from "./style.module.scss";
 const HeaderPage = () => {
   return (
     <header className={style.header}>
+      <div className={style.containerLogo}>
       <img src={imgLogo} alt="image logo" />
+      </div>
     </header>
   );
 };

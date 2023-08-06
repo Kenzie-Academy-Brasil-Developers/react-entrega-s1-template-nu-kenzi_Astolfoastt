@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Input from "./input";
 import InputValue from "./inputValue";
 import Select from "./select";
 import styles from "./style.module.scss";
@@ -25,7 +24,7 @@ const AllForms = ({ addValue }) => {
   return (
     <section className={styles.containerFlex}>
       <form className="containerFlex" onSubmit={submit}>
-        <Input
+        <InputValue
           label="Descrição"
           placeholder="Digite aqui sua descrição"
           type="text"
